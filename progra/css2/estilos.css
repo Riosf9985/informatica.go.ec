@@ -1,0 +1,779 @@
+ 
+ 
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu */
+
+#menu-bar{
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    width: 40%;
+    height: 100vh;
+    background: rgba(163,228,215,0.9);
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    transform: translate(-100%);
+}
+
+.menu a {
+    display: block;
+    color: #000000 ;
+    height: 50px;
+    text-decoration: none;
+    text-align: right;
+    padding: 15px;
+    border-bottom: 1px solid rgba(68, 192, 88, 0.9);
+}
+
+.menu a:hover {
+    background: rgba(209, 148, 148, 0.5);
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translate(0%); 
+}
+
+/* Fin menu  */
+
+
+
+h1 {
+    float: left; 
+}
+
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color:#fff
+}
+
+#banner h2{
+    font-size: 28px;
+}
+
+#banner a{
+    display: block;
+    width: 100px;
+    color:#fff;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+}
+
+#banner a:hover { 
+    background: rgba(51,51,51,0.5)
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+div p a{
+    font-family: 'roboto';
+    background: #dc5745;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsl(244, 51%, 49%), hsla(135, 100%, 62%, 0.637));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsl(244, 51%, 49%),hsla(135, 100%, 62%, 0.637));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 180px;
+    margin: 10px auto;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    
+}
+
+#bienvenidos {
+    text-align: center;
+}
+
+#block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#blog h3,h4 {
+    text-align: center;
+}
+
+#block .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#block article{
+    margin: 15px;
+}
+
+#block img{
+    width: 100%;
+    mask-border-width: 280px;
+
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .contenedor {
+    display: table;
+}
+
+
+table{
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    top: 2em;
+    left: 1em;
+    width: 9em;
+  	font-family: Georgia, "Times New Roman",
+          Times, serif;
+    text-align: center;
+}
+
+
+body {
+    font-family: 'open sans';
+}
+
+
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 650px;
+
+    background: #00B4DB;
+  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsla(244, 51%, 49%, 0.555), hsla(135, 59%, 59%, 0.555)) , url(../img/Visual.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(244, 51%, 49%, 0.555), hsla(135, 59%, 59%, 0.555)) , url(../img/Visual.jpg);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background-size: cover;
+ background-attachment: fixed;
+ position: relative;
+
+ top: 0;
+ left: 0;
+ z-index: 100;
+}
+
+nav{
+    text-align: center;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#0e0c0c;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 29px;
+    font-size: 20px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+    float: rigth;
+    height: 50%;
+    object-fit: cover; 
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+.imagen-about-us1{
+    width: 48%;
+    height: 60%;
+}
+
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+.contenido-textos1 p{
+    padding: 0px 0px 15px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.contenido-textos1 h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+
+content {
+    font-weight: 300;
+    text-align: left;
+    padding: 60px 10px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Galeria */
+
+
+.portafolio{
+    background: #c4c2c2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+    text-align: center;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+ul a p{
+    text-decoration: none;
+}
+
+.portafolio1{
+    background: rgb(113, 209, 180);
+}
+
+.galeria-port1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port1{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port1 > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.hover-galeria1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* transform: scale(0); */
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria1 img{
+    width: 50px;
+}
+
+.hover-galeria1 p{
+    color: #fff;
+    text-align: center;
+}
+
+.imagen-port1:hover .hover-galeria1{
+    transform: scale(0);
+}
+
+
+section img{
+    text-align: center;
+}
+
+
+/* Clients */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*  Our team */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?37042124');
+    src: url('../font/fontello.eot?37042124#iefix') format('embedded-opentype'),
+         url('../font/fontello.woff2?37042124') format('woff2'),
+         url('../font/fontello.woff?37042124') format('woff'),
+         url('../font/fontello.ttf?37042124') format('truetype'),
+         url('../font/fontello.svg?37042124#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+  /*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.svg?37042124#fontello') format('svg');
+    }
+  }
+  */
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+  
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+  
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+  
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+  
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+  
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+  
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+  
+  .icon-th-large:before { content: '\e800'; } /* '' */
+  .icon-th:before { content: '\e801'; } /* '' */
+  .icon-th-list:before { content: '\e802'; } /* '' */
+  .icon-cog:before { content: '\e803'; } /* '' */
+  .icon-cog-alt:before { content: '\e804'; } /* '' */
+  .icon-wrench:before { content: '\e805'; } /* '' */
+  .icon-download:before { content: '\e806'; } /* '' */
+  .icon-upload:before { content: '\e807'; } /* '' */
+  .icon-search-circled:before { content: '\e808'; } /* '' */
+  .icon-attach:before { content: '\e809'; } /* '' */
+  .icon-desktop:before { content: '\f108'; } /* '' */
+  .icon-laptop:before { content: '\f109'; } /* '' */
+  
